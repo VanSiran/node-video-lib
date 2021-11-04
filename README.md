@@ -1,14 +1,14 @@
-# node-video-lib
+# wx-video-lib
 
-[![Build Status](https://github.com/gkozlenko/node-video-lib/actions/workflows/node.js.yml/badge.svg)](https://github.com/gkozlenko/node-video-lib/actions/workflows/node.js.yml)
-[![npm Version](https://img.shields.io/npm/v/node-video-lib.svg)](https://www.npmjs.com/package/node-video-lib)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5244de41aaa07c082764/maintainability)](https://codeclimate.com/github/gkozlenko/node-video-lib/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5244de41aaa07c082764/test_coverage)](https://codeclimate.com/github/gkozlenko/node-video-lib/test_coverage)
-[![GitHub License](https://img.shields.io/github/license/gkozlenko/node-video-lib.svg)](https://github.com/gkozlenko/node-video-lib/blob/master/LICENSE)
+[![Build Status](https://github.com/VanSiran/wx-video-lib/actions/workflows/node.js.yml/badge.svg)](https://github.com/VanSiran/wx-video-lib/actions/workflows/node.js.yml)
+[![npm Version](https://img.shields.io/npm/v/wx-video-lib.svg)](https://www.npmjs.com/package/wx-video-lib)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5244de41aaa07c082764/maintainability)](https://codeclimate.com/github/gkozlenko/wx-video-lib/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5244de41aaa07c082764/test_coverage)](https://codeclimate.com/github/gkozlenko/wx-video-lib/test_coverage)
+[![GitHub License](https://img.shields.io/github/license/gkozlenko/wx-video-lib.svg)](https://github.com/VanSiran/wx-video-lib/blob/master/LICENSE)
 [![Donate using PayPal](https://img.shields.io/badge/paypal-donate-green.svg)](https://www.paypal.me/pipll)
 [![Buy me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-green.svg)](https://www.buymeacoffee.com/NIUeF95)
 
-Node.js Video Library / MP4 & FLV parser / MP4 builder / HLS muxer
+Wechat MiniApp Video Library / MP4 & FLV parser / MP4 builder / HLS muxer
 
 ## Limitations
 
@@ -17,7 +17,7 @@ Node.js Video Library / MP4 & FLV parser / MP4 builder / HLS muxer
 ## Installation
 
 ```bash
-$ npm install node-video-lib
+$ npm install wx-video-lib
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ $ npm install node-video-lib
 
 ```javascript
 const fs = require('fs');
-const VideoLib = require('node-video-lib');
+const VideoLib = require('wx-video-lib');
 
 fs.open('/path/to/file', 'r', function(err, fd) {
     try {
@@ -45,7 +45,7 @@ fs.open('/path/to/file', 'r', function(err, fd) {
 
 ```javascript
 const fs = require('fs');
-const VideoLib = require('node-video-lib');
+const VideoLib = require('wx-video-lib');
 
 fs.open('/path/to/file', 'r', function(err, fd) {
     try {
@@ -69,7 +69,7 @@ fs.open('/path/to/file', 'r', function(err, fd) {
 
 ```javascript
 const fs = require('fs');
-const VideoLib = require('node-video-lib');
+const VideoLib = require('wx-video-lib');
 
 fs.open('/path/to/file', 'r', function(err, fd) {
     try {
@@ -95,7 +95,7 @@ fs.open('/path/to/file', 'r', function(err, fd) {
 
 ```javascript
 const fs = require('fs');
-const VideoLib = require('node-video-lib');
+const VideoLib = require('wx-video-lib');
 
 fs.open('/path/to/file', 'r', function(err, fd) {
     try {
@@ -123,7 +123,7 @@ fs.open('/path/to/file', 'r', function(err, fd) {
 
 ```javascript
 const fs = require('fs');
-const VideoLib = require('node-video-lib');
+const VideoLib = require('wx-video-lib');
 
 fs.open('/path/to/file', 'r', function(err, fd) {
     fs.open('/path/to/index.idx', 'r', function(err, fdi) {
@@ -153,7 +153,7 @@ fs.open('/path/to/file', 'r', function(err, fd) {
 A tool for parsing video files (MP4 or FLV).
 
 ```javascript
-const MovieParser = require('node-video-lib').MovieParser
+const MovieParser = require('wx-video-lib').MovieParser
 ```
 
 Methods:
@@ -167,7 +167,7 @@ Methods:
 A tool for parsing MP4 video files.
 
 ```javascript
-const MP4Parser = require('node-video-lib').MP4Parser
+const MP4Parser = require('wx-video-lib').MP4Parser
 ```
 
 Methods:
@@ -184,7 +184,7 @@ Methods:
 A tool for parsing FLV video files.
 
 ```javascript
-const FLVParser = require('node-video-lib').FLVParser
+const FLVParser = require('wx-video-lib').FLVParser
 ```
 
 Methods:
@@ -201,7 +201,7 @@ Methods:
 A tool for building MP4 video files.
 
 ```javascript
-const MP4Builder = require('node-video-lib').MP4Builder
+const MP4Builder = require('wx-video-lib').MP4Builder
 ```
 
 Methods:
@@ -216,7 +216,7 @@ Methods:
 A tool for creating MPEG-TS chunks.
 
 ```javascript
-const HLSPacketizer = require('node-video-lib').HLSPacketizer
+const HLSPacketizer = require('wx-video-lib').HLSPacketizer
 ```
 
 Methods:
@@ -231,7 +231,7 @@ Methods:
 A tool for splitting the movie into a list of fragments.
 
 ```javascript
-const FragmentListBuilder = require('node-video-lib').FragmentListBuilder
+const FragmentListBuilder = require('wx-video-lib').FragmentListBuilder
 ```
 
 Methods:
@@ -246,7 +246,7 @@ Methods:
 A tool to work with index files.
 
 ```javascript
-const FragmentListIndexer = require('node-video-lib').FragmentListIndexer
+const FragmentListIndexer = require('wx-video-lib').FragmentListIndexer
 ```
 
 Methods:
@@ -263,7 +263,7 @@ Methods:
 A tool for reading samples data of the given movie fragment.
 
 ```javascript
-const FragmentReader = require('node-video-lib').FragmentReader
+const FragmentReader = require('wx-video-lib').FragmentReader
 ```
 
 Methods:
@@ -278,7 +278,7 @@ Methods:
 A movie class
 
 ```javascript
-const Movie = require('node-video-lib').Movie
+const Movie = require('wx-video-lib').Movie
 ```
 
 Properties:
@@ -311,7 +311,7 @@ Methods:
 A list of movie fragments class.
 
 ```javascript
-const FragmentList = require('node-video-lib').FragmentList
+const FragmentList = require('wx-video-lib').FragmentList
 ```
 
 Properties:
@@ -348,7 +348,7 @@ Methods:
 A movie fragment class
 
 ```javascript
-const Fragment = require('node-video-lib').Fragment
+const Fragment = require('wx-video-lib').Fragment
 ```
 
 Properties:
@@ -376,7 +376,7 @@ Methods:
 A general track class
 
 ```javascript
-const Track = require('node-video-lib').Track
+const Track = require('wx-video-lib').Track
 ```
 
 Properties:
@@ -401,7 +401,7 @@ Methods:
 An audio track class. Extends the general track class
 
 ```javascript
-const AudioTrack = require('node-video-lib').AudioTrack
+const AudioTrack = require('wx-video-lib').AudioTrack
 ```
 
 Properties:
@@ -415,7 +415,7 @@ Properties:
 A video track class. Extends the general track class
 
 ```javascript
-const VideoTrack = require('node-video-lib').VideoTrack
+const VideoTrack = require('wx-video-lib').VideoTrack
 ```
 
 Properties:
@@ -433,7 +433,7 @@ Methods:
 A general video sample class
 
 ```javascript
-const Sample = require('node-video-lib').Sample
+const Sample = require('wx-video-lib').Sample
 ```
 
 Properties:
@@ -453,7 +453,7 @@ Methods:
 An audio sample class. Extends the general sample class
 
 ```javascript
-const AudioSample = require('node-video-lib').AudioSample
+const AudioSample = require('wx-video-lib').AudioSample
 ```
 
 ### VideoSample
@@ -461,7 +461,7 @@ const AudioSample = require('node-video-lib').AudioSample
 A video sample class. Extends the general sample class
 
 ```javascript
-const VideoSample = require('node-video-lib').VideoSample
+const VideoSample = require('wx-video-lib').VideoSample
 ```
 
 Properties:

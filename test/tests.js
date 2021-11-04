@@ -1,6 +1,6 @@
 'use strict';
 
-describe('node-video-lib', function () {
+describe('wx-video-lib', function () {
 
     require('./base-classes');
     require('./buffer-utils');
